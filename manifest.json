@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Modificateur de notes",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+                  "https://0332870r.index-education.net/pronote/eleve.html"
+                ],
+      "js": ["contentScript.js"]
+    }
+  ]
+}
